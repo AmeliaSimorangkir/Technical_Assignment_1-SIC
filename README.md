@@ -1,9 +1,9 @@
 # Tech Assignment - week 4
 Saya menggunakan Sensor DHT11 (Temprature & Humidity) sebagai sensor temperatur, ESP32 adalah microcontroler yang terhubung dengan DHT11 
-- [.ino] files untuk mengambil 1 buah data sensor dan mengirimkannya ke local server melalui HTTP REST API ( POST Method )
-- [.py] files untuk menerima data REST API dan menampilkanya di server
+- [sketch.ino](ProgramArduino/sketch.ino) files untuk mengambil 1 buah data sensor dan mengirimkannya ke local server melalui HTTP REST API ( POST Method )
+- [server.py](Server/server.py) files untuk menerima data REST API dan menampilkanya di server
 
-## Identitas Diri
+## Data Diri
 |                     |                                  |
 |---------------------|----------------------------------|
 | **Nama**            | Amelia Joy Angelita Simorangkir  |
@@ -21,13 +21,11 @@ Saya menggunakan Sensor DHT11 (Temprature & Humidity) sebagai sensor temperatur,
 | 5V / 3V| + |
 | GND | - |
 | 4 | OUT |
-## Foto Rangkaian
-![Image]
 
 ## Cara Penggunaan
 
 1. **Rangkaian Fisik**: Hubungkan DHT11 ke microcontroller ESP32
-    ![ESP32 - Temperature Sensor Setup](esp-32-temperature-sensor-assignment.jpeg)
+    ![Image](Gambar/rangkaianFisik.jpg)
 
 2. **Program Arduino**: Jalankan sketch `sketch.ino` dengan Arduino IDE. Pastikan anda mengubah
    - DHTPIN isi sesuai pin pada rangkaian
